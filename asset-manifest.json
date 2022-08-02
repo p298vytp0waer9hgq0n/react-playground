@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/react-playground/static/css/main.5adb5013.css",
-    "main.js": "/react-playground/static/js/main.7344ca40.js",
+    "main.js": "/react-playground/static/js/main.d4cee622.js",
     "static/media/hero.png": "/react-playground/static/media/hero.92794ecc0d69c1fdabc5.png",
+    "static/media/knight.png": "/react-playground/static/media/knight.93e38816c8743018b02e.png",
+    "static/media/coding.png": "/react-playground/static/media/coding.1f67cfcc7e52033d31ee.png",
     "static/media/wedding.png": "/react-playground/static/media/wedding.d9410925d956bb2ab2d5.png",
+    "static/media/engeneering.png": "/react-playground/static/media/engeneering.e98f5164ef5e57617fb0.png",
     "static/media/portrait03.png": "/react-playground/static/media/portrait03.14b4d80dc9f586507fcd.png",
     "static/media/portrait.png": "/react-playground/static/media/portrait.4da51f8e1d73cd25ecce.png",
     "static/media/portrait02.png": "/react-playground/static/media/portrait02.8563a53afac509ad09ef.png",
@@ -23,10 +26,10 @@
     "index.html": "/react-playground/index.html",
     "static/media/email.svg": "/react-playground/static/media/email.9a2254b41727510aba0d31da7ad223f9.svg",
     "main.5adb5013.css.map": "/react-playground/static/css/main.5adb5013.css.map",
-    "main.7344ca40.js.map": "/react-playground/static/js/main.7344ca40.js.map"
+    "main.d4cee622.js.map": "/react-playground/static/js/main.d4cee622.js.map"
   },
   "entrypoints": [
     "static/css/main.5adb5013.css",
-    "static/js/main.7344ca40.js"
+    "static/js/main.d4cee622.js"
   ]
 }
