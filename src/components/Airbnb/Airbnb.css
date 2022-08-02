@@ -32,7 +32,6 @@
 
 .air-cards {
     width: 100%;
-    /* overflow: hidden; */
     display: flex;
     gap: 10px;
     padding: 0 36px;
@@ -85,9 +84,13 @@
     font-weight: 600;
 }
 
+.contacts {
+    display: flex;
+    gap: 10px;
+}
 
 .contact {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     flex-basis: 176px;
     flex-shrink: 0;
     padding: 15px;
@@ -101,17 +104,24 @@
 
 .contact__img {
     max-width: 100%;
-    aspect-ratio: initial;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     border-radius: 4px;
 }
 
 .contact__title {
+    font-family: 'Poppins';
     font-size: 16px;
+    letter-spacing: -.03em;
 }
 
 .contact__info {
+    max-width: 176px;
     font-family: 'Inter';
-    font-size: 10px;
+    font-size: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .contact__icon {
