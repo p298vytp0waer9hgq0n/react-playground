@@ -16,7 +16,6 @@ export default function Contacts () {
         phone: "(273) 8008569",
         email: "bloodlust@code.org"
       });
-    console.log(ContactWithTitle);
     return (
       <section className="contacts">
         <Contact
