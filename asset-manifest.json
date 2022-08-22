@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-playground/static/css/main.4f43be6a.css",
-    "main.js": "/react-playground/static/js/main.4d8fd981.js",
+    "main.css": "/react-playground/static/css/main.5f7769ec.css",
+    "main.js": "/react-playground/static/js/main.e73f548e.js",
     "static/media/Inter-Bold.ttf": "/react-playground/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-SemiBold.ttf": "/react-playground/static/media/Inter-SemiBold.4d56bb21f2399db8ad48.ttf",
     "static/media/Inter-Regular.ttf": "/react-playground/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
@@ -14,22 +14,24 @@
     "static/media/portrait.png": "/react-playground/static/media/portrait.35246b0c28e07388ebec.png",
     "static/media/hero01.png": "/react-playground/static/media/hero01.75edf11967aba0460cb3.png",
     "static/media/portrait03.png": "/react-playground/static/media/portrait03.7d703a25a1c268f4c08b.png",
+    "static/media/Inter-Medium.woff2": "/react-playground/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
     "static/media/portrait02.png": "/react-playground/static/media/portrait02.e1448cca2c6d4774ab47.png",
     "static/media/portrait01.png": "/react-playground/static/media/portrait01.8900a1fee9e502c49e2c.png",
     "static/media/airlogo.svg": "/react-playground/static/media/airlogo.12f6665378cd3e772342cf0822dd6ed9.svg",
     "static/media/insta.svg": "/react-playground/static/media/insta.b65fd1ea807b0dd362e3fc5606fde418.svg",
     "static/media/github.svg": "/react-playground/static/media/github.a6e245a37f0e87cef1e51c9c7e94ea47.svg",
+    "static/media/globe.svg": "/react-playground/static/media/globe.10ddb4ca94ecf3a9f9b4a03e41ebeb6e.svg",
     "static/media/react.svg": "/react-playground/static/media/react.c8bb15c732f6f77fe706.svg",
     "static/media/twitter.svg": "/react-playground/static/media/twitter.5cb28d333b8d6744d0d9178c7ad1972d.svg",
     "static/media/linkedin.svg": "/react-playground/static/media/linkedin.f6c23309e78849945a3d9dce42769c2f.svg",
     "static/media/facebook.svg": "/react-playground/static/media/facebook.1c2e1e60a9fefe1f4cc327632f5ffc3b.svg",
     "index.html": "/react-playground/index.html",
     "static/media/email.svg": "/react-playground/static/media/email.9a2254b41727510aba0d31da7ad223f9.svg",
-    "main.4f43be6a.css.map": "/react-playground/static/css/main.4f43be6a.css.map",
-    "main.4d8fd981.js.map": "/react-playground/static/js/main.4d8fd981.js.map"
+    "main.5f7769ec.css.map": "/react-playground/static/css/main.5f7769ec.css.map",
+    "main.e73f548e.js.map": "/react-playground/static/js/main.e73f548e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f43be6a.css",
-    "static/js/main.4d8fd981.js"
+    "static/css/main.5f7769ec.css",
+    "static/js/main.e73f548e.js"
   ]
 }
