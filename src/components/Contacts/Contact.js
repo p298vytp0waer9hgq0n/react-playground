@@ -1,8 +1,26 @@
+import { useState } from "react"
+import Star from "./Star";
+
 export default function Contact ({img, name, phone, email}) {
+    const [isFavorite, setFavorite] = useState(false);
+    const [someObject, setSomeObject] = useState({
+        param1: 'something',
+        param2: 'something else',
+        param3: 'final something'
+    });
+
+    function toggleFavorite () {
+        setFavorite((prev) => !prev);
+        setSomeObject((prev) => ( { ...prev, param4: 'yet another something' } )
+        );
+    }
+
     return (
         <div className='contact'>
+        {console.log(someObject)}
             <img className='contact__img' src={img} alt='contact' />
             <h2 blahblah="true" className='contact__title'>{name}</h2>
+            <Star isFavorite={isFavorite} callback={toggleFavorite} />
             <div>
                 <p className='contact__info'>
                     <svg className='contact__icon' fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.102 1.707 6.5 4.906l6.398-3.199A1.6 1.6 0 0 0 11.3.2H1.7A1.6 1.6 0 0 0 .102 1.707Z" fill="#1E1F26"/><path d="m12.9 3.494-6.4 3.2-6.4-3.2V8.2a1.6 1.6 0 0 0 1.6 1.6h9.6a1.6 1.6 0 0 0 1.6-1.6V3.494Z" fill="#1E1F26"/></svg>

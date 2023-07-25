@@ -10,12 +10,9 @@ import code from '../../images/portrait02.png';
 import goblin from '../../images/portrait03.png';
 
 export default function Contacts () {
-    const ContactWithTitle = withTitle(ContactClass)({
-        img: {code},
-        name: "Sam Dreihänder",
-        phone: "(273) 8008569",
-        email: "bloodlust@code.org"
-      });
+    function ContactWithTitle (props) { 
+      return withTitle(ContactClass)(props);
+    }
     return (
       <section className="contacts">
         <Contact
@@ -42,7 +39,12 @@ export default function Contacts () {
           phone="68736861"
           email="aebonk@witnesses.mil"
         />
-        <ContactWithTitle />
+        <ContactWithTitle
+          img={goblin}
+          name="Archiepiscopus Bonk"
+          phone="68736861"
+          email="aebonk@witnesses.mil"
+        />
       </section>
     )
 }

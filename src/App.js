@@ -8,6 +8,7 @@ import Airbnb from './components/Airbnb/Airbnb';
 import Contacts from './components/Contacts/Contacts';
 import TravelJournal from './components/TravelJournal/TravelJournal';
 import MainNav from './components/MainNav/MainNav';
+import MemeGenerator from './components/MemeGenerator/MemeGenerator';
 import { travelData } from './utils/travel-data';
 
 export default function App() {
@@ -18,6 +19,15 @@ export default function App() {
       <>
         <MainNav navigate={setPage} />
         <TravelJournal data={travelData} />
+      </>
+    )
+  }
+  
+  if (page === 'meme') {
+    return (
+      <>
+        <MainNav navigate={setPage} />
+        <MemeGenerator />
       </>
     )
   }

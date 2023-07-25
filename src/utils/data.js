@@ -1,7 +1,7 @@
-import wedding from '../../images/wedding.png';
-import knight from '../../images/knight.png';
-import engeneering from '../../images/engeneering.png';
-import coding from '../../images/coding.png';
+import wedding from '../images/wedding.png';
+import knight from '../images/knight.png';
+import engeneering from '../images/engeneering.png';
+import coding from '../images/coding.png';
 
 export const data = [
     {

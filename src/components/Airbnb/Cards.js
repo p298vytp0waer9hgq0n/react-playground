@@ -1,5 +1,5 @@
 import Card from './Card';
-import { data } from './data';
+import { data } from '../../utils/data';
 
 export default function Cards () {
     const cardElements = data.map((item) => {

@@ -18,9 +18,9 @@ export function tmp () {
     console.log(code);
 }
 
-export default function carried (WrappedComponent) {
+export default function withTitle (WrappedComponent) {
     return function (props) {
-        return class extends React.Component {
+        class Tmp extends React.Component {
             render() {
                 return (
                 <>
@@ -30,5 +30,6 @@ export default function carried (WrappedComponent) {
                 )
             }
         }
+        return <Tmp />
     }
 }

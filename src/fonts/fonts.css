@@ -39,3 +39,17 @@
         url(./Poppins-SemiBold.ttf) format('truetype');
     font-weight: 600;
 }
+
+@font-face {
+    font-family: 'Karla';
+    src: local('Karla'),
+        url(./Karla-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: local('Karla'),
+        url(./Karla-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
