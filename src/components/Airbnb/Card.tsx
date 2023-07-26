@@ -1,4 +1,15 @@
-export default function Card (props) {
+type item = {
+  openSpots: number;
+  location: string;
+  coverImg: string;
+  title: string;
+  price: number;
+  stats: {
+    rating: number;
+    reviewCount: number;
+  };
+};
+export default function Card (props: item) {
     const hours = new Date().getHours();
     let timeOfDay;
 

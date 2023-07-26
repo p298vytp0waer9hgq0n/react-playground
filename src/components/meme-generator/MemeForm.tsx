@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { picData } from '../../utils/pictures';
 
-import styles from './MemeGenerator.module.css';
+import styles from './meme-generator.module.css';
 
 export default function MemeForm () {
     const [meme, setMeme] = useState({
@@ -10,9 +10,9 @@ export default function MemeForm () {
         randomImage: ''
     });
     const [allMemeImages] = useState(picData);
-    const [thingsArray, setThings] = useState([]);
+    const [thingsArray, setThings] = useState<Array<string>>([]);
 
-    function handleClick (evt) {
+    function handleClick (evt: React.MouseEvent) {
         evt.preventDefault();
         const i = Math.floor(Math.random() * allMemeImages.data.pics.length);
         setMeme((prev) => ({...prev, randomImage: allMemeImages.data.pics[i].url}));

@@ -1,7 +1,7 @@
 import MemeHeader from './MemeHeader';
 import MemeForm from './MemeForm';
 
-import styles from './MemeGenerator.module.css';
+import styles from './meme-generator.module.css';
 
 export default function MemeGenerator () {
     return (

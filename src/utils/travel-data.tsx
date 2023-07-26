@@ -1,4 +1,5 @@
 export const travelData = [{
+    id: 1,
     title: "Soul Sanctum",
     location: "City of Tears",
     locationUrl: "https://hollowknight.wiki.fextralife.com/Soul+Sanctum",
@@ -8,6 +9,7 @@ export const travelData = [{
     imageUrl: "https://i.postimg.cc/7LkZQdCN/knight.png"
 },
 {
+    id: 2,
     title: "Nereid",
     location: "Neptune",
     locationUrl: "https://warframe.fandom.com/wiki/Neptune",
@@ -17,6 +19,7 @@ export const travelData = [{
     imageUrl: "https://i.postimg.cc/xdxbGWHx/nereid.png"
 },
 {
+    id: 3,
     title: "Joppa",
     location: "South-eastern Qud",
     locationUrl: "https://cavesofqud.fandom.com/wiki/Joppa",

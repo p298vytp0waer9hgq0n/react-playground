@@ -1,11 +1,18 @@
 import React from "react";
 
-export default class Contact extends React.Component {
+type props = {
+    img: string;
+    name: string;
+    phone: string;
+    email: string;
+}
+
+export default class Contact extends React.Component<props> {
     render () {
         return (
             <div className='contact'>
                 <img className='contact__img' src={this.props.img} alt='contact' />
-                <h2 blahblah="true" className='contact__title'>{this.props.name}</h2>
+                <h2 className='contact__title'>{this.props.name}</h2>
                 <div>
                     <p className='contact__info'>
                         <svg className='contact__icon' fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.102 1.707 6.5 4.906l6.398-3.199A1.6 1.6 0 0 0 11.3.2H1.7A1.6 1.6 0 0 0 .102 1.707Z" fill="#1E1F26" /><path d="m12.9 3.494-6.4 3.2-6.4-3.2V8.2a1.6 1.6 0 0 0 1.6 1.6h9.6a1.6 1.6 0 0 0 1.6-1.6V3.494Z" fill="#1E1F26" /></svg>

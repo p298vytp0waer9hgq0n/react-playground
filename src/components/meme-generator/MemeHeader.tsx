@@ -1,4 +1,4 @@
-import styles from './MemeGenerator.module.css';
+import styles from './meme-generator.module.css';
 
 import trollIcon from '../../images/troll.svg';
 

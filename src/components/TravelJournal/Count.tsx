@@ -3,11 +3,11 @@ import Indicator from "./Indicator";
 
 import styles from './TravelJournal.module.css';
 
-export default function Count(props) {
+export default function Count() {
     const [answer, setAnswer] = useState(true);
     const [counter, setCount] = useState(0);
 
-    function greeting (name) {
+    function greeting (name: string) {
         const hours = new Date().getHours();
         let tod;
 
@@ -28,7 +28,7 @@ export default function Count(props) {
         setAnswer((prevAnswer) => !prevAnswer);
     }
     
-    function count (num) {
+    function count (num: number) {
         return function () {
              setCount((oldCount) => oldCount + num);
         }

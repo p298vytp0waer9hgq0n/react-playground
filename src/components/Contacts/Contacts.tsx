@@ -9,8 +9,15 @@ import genasi from '../../images/portrait01.png';
 import code from '../../images/portrait02.png';
 import goblin from '../../images/portrait03.png';
 
+type ContactProps = {
+  img: string;
+  name: string;
+  phone: string;
+  email: string;
+}
+
 export default function Contacts () {
-    function ContactWithTitle (props) { 
+    function ContactWithTitle (props: ContactProps) { 
       return withTitle(ContactClass)(props);
     }
     return (

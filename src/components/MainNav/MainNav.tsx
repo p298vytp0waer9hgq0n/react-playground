@@ -1,6 +1,10 @@
 import styles from './MainNav.module.css'
 
-export default function MainNav (props) {
+type MainNavProps = {
+    navigate: Function;
+}
+
+export default function MainNav (props: MainNavProps) {
     function gotoMain () {
         props.navigate('main');
     }

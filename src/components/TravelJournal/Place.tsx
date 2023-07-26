@@ -1,6 +1,18 @@
 import styles from './TravelJournal.module.css';
 
-export default function Place (props) {
+type PlaceProps = {
+    place: {
+        imageUrl: string;
+        location: string;
+        locationUrl: string;
+        title: string;
+        startDate: string;
+        endDate: string;
+        description: string;
+    }
+}
+
+export default function Place (props: PlaceProps) {
     return (
         <li className={styles.travel__place}>
             <img className={styles.travel__img} src={props.place.imageUrl} alt={props.place.title} />

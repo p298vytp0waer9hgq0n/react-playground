@@ -1,7 +1,14 @@
 import { useState } from "react"
 import Star from "./Star";
 
-export default function Contact ({img, name, phone, email}) {
+type props = {
+    img: string;
+    name: string;
+    phone: string;
+    email: string;
+}
+
+export default function Contact ({img, name, phone, email}: props) {
     const [isFavorite, setFavorite] = useState(false);
     const [someObject, setSomeObject] = useState({
         param1: 'something',
@@ -14,12 +21,16 @@ export default function Contact ({img, name, phone, email}) {
         setSomeObject((prev) => ( { ...prev, param4: 'yet another something' } )
         );
     }
+    function consoleObject () {
+        console.log(someObject);
+        return '';
+    }
 
     return (
         <div className='contact'>
-        {console.log(someObject)}
+        <p>{consoleObject()}</p>
             <img className='contact__img' src={img} alt='contact' />
-            <h2 blahblah="true" className='contact__title'>{name}</h2>
+            <h2 className='contact__title'>{name}</h2>
             <Star isFavorite={isFavorite} callback={toggleFavorite} />
             <div>
                 <p className='contact__info'>
