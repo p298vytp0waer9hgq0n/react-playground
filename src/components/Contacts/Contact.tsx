@@ -28,7 +28,7 @@ export default function Contact ({img, name, phone, email}: props) {
 
     return (
         <div className='contact'>
-        <p>{consoleObject()}</p>
+        <span>{consoleObject()}</span>
             <img className='contact__img' src={img} alt='contact' />
             <h2 className='contact__title'>{name}</h2>
             <Star isFavorite={isFavorite} callback={toggleFavorite} />
