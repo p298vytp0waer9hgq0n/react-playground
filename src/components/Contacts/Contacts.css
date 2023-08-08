@@ -32,6 +32,7 @@
 }
 
 .contact__favorite {
+	display: block;
     position: absolute;
     top: 19px;
     left: 19px;
