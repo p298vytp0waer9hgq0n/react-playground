@@ -40,7 +40,7 @@
     gap: 17px;
 }
 
-.meme__inputs:has(:focus-visible) {
+.meme__inputs:has(:focus-visible:not(:active)) {
     outline: 1px solid red;
 }
 
@@ -53,12 +53,12 @@
     border-radius: 5px;
 }
 
-.meme__input:focus {
+/* .meme__input:focus {
     border: 1px solid #b3b0b5;
     outline: none;
-}
+} */
 
-.meme__input:focus-visible {
+.meme__input:focus-visible:not(:active) {
     border: 1px solid #b3b0b5;
     outline: none;
 }
