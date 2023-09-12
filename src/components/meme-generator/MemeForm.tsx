@@ -1,7 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { picData } from "../../utils/pictures";
 
 import styles from "./meme-generator.module.css";
+
+type Product = {
+    id: string;
+    title: string;
+    description: string;
+    price: string;
+    discountPercentage: string;
+    rating: string;
+    stock: string;
+    brand: string;
+    category: string;
+    thumbnail: string;
+    images: string;
+};
+
+type Products = {
+    products: Product[];
+};
 
 export default function MemeForm() {
     const [meme, setMeme] = useState({
@@ -10,6 +28,7 @@ export default function MemeForm() {
         randomImage: "",
     });
     const [allMemeImages] = useState(picData);
+    const [products, setProducts] = useState<Products | null>(null);
     const [thingsArray, setThings] = useState<Array<string>>([]);
 
     function handleClick(evt: React.MouseEvent) {
@@ -42,8 +61,24 @@ export default function MemeForm() {
         <p key={index}>{item}</p>
     ));
 
+    useEffect(() => {
+        const url = new URL("https://dummyjson.com/products");
+        url.searchParams.set("limit", "5");
+        const controller = new AbortController();
+        fetch(url, {
+            signal: controller.signal,
+        })
+            .then((res) => res.json())
+            .then((data) => setProducts(data));
+        return () => controller.abort();
+    }, []);
+
     return (
         <main>
+            {products &&
+                products.products.map((product) => (
+                    <p key={product.id}>{product.title}</p>
+                ))}
             <form className={styles.meme__form}>
                 <div className={styles.meme__inputs}>
                     <input

@@ -3,7 +3,7 @@ function capitalizeEveryOther(str: string) {
     let count = 0;
     for (const l of str) {
         count++;
-        res += (count & 1) === 0 ? l.toUpperCase() : l.toLowerCase();
+        res += (count & 1) === 1 ? l.toUpperCase() : l.toLowerCase();
     }
     return res;
     /* return Array.from(str).reduce(
@@ -14,6 +14,32 @@ function capitalizeEveryOther(str: string) {
         ""
     ); */
 }
+
+const divs =
+    "<div><section></section><div><article><div><div><div><p>something</p><div></article>";
+
+function closeDivs(str: string) {
+    // return str.replace(/(<div>.*?)(<div>)/g, "$1</div>");
+    /* let index = str.indexOf("<div>");
+    let tail = str;
+    let res = "";
+    let open = false;
+    while (index !== -1) {
+        res += tail.slice(0, index) + (open ? "</div>" : "<div>");
+        tail = tail.slice(index + 5);
+        open = !open;
+        index = tail.indexOf("<div>");
+    }
+    return res + tail; */
+    const arr = str.split("<div>");
+    let res = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        res += ((i & 1) === 1 ? "<div>" : "</div>") + arr[i];
+    }
+    return res;
+}
+
+console.log(closeDivs(divs));
 
 export default function Main() {
     return (
