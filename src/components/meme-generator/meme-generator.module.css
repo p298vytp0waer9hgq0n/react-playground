@@ -12,6 +12,7 @@
     justify-content: space-between;
     background: linear-gradient(to right, #672280 1.18%, #a626d3);
     color: #fff;
+    font-family: var(--something, var(--another));
 }
 
 .meme__title {

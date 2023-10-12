@@ -38,6 +38,7 @@ export default function MemeGenerator() {
     return (
         <div className={styles.meme}>
             <MemeHeader />
+            <img src="/favicon.svg" />
             <MemeForm />
         </div>
     );
