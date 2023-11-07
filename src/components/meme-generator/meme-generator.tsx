@@ -1,5 +1,5 @@
-import MemeHeader from "./MemeHeader";
-import MemeForm from "./MemeForm";
+import MemeHeader from "./meme-header";
+import MemeForm from "./meme-form";
 
 import styles from "./meme-generator.module.css";
 
