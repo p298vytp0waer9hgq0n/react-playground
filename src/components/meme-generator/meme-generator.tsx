@@ -38,7 +38,7 @@ export default function MemeGenerator() {
     return (
         <div className={styles.meme}>
             <MemeHeader />
-            <img src="/favicon.svg" />
+            <img src="/react-playground/favicon.svg" />
             <MemeForm />
         </div>
     );

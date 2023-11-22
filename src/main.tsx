@@ -7,6 +7,7 @@ import {
     createBrowserRouter,
     createRoutesFromElements,
 } from "react-router-dom";
+import "./index.css";
 import MemeGenerator from "./components/meme-generator/meme-generator";
 import TravelJournal from "./components/TravelJournal/TravelJournal";
 import { travelData } from "./utils/travel-data";
