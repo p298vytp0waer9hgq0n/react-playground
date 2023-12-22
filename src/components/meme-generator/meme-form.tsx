@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { picData } from "../../utils/pictures";
+import { useEffect, useState } from 'react';
+import { picData } from '../../utils/pictures';
 
-import styles from "./meme-generator.module.css";
+import styles from './meme-generator.module.css';
 
 type Product = {
     id: string;
@@ -23,9 +23,9 @@ type Products = {
 
 export default function MemeForm() {
     const [meme, setMeme] = useState({
-        topText: "",
-        bottomText: "",
-        randomImage: "",
+        topText: '',
+        bottomText: '',
+        randomImage: '',
     });
     const [allMemeImages] = useState(picData);
     const [products, setProducts] = useState<Products | null>(null);
@@ -41,12 +41,12 @@ export default function MemeForm() {
     }
 
     function handleCursor() {
-        let scream = "A";
+        let scream = 'A';
         while (true) {
-            scream += "a";
+            scream += 'a';
             if (0.5 < Math.random()) break;
         }
-        scream += "h!!!";
+        scream += 'h!!!';
         console.log(scream);
     }
 
@@ -61,14 +61,40 @@ export default function MemeForm() {
         <p key={index}>{item}</p>
     ));
 
+    /* useEffect(() => {
+        const url = new URL(
+            'https://w.forfun.com/fetch/da/daf8eb568fea522f6701fb9c66378cdc.jpeg'
+        );
+        const url = new URL('https://i.postimg.cc/FzgXJ2wv/portrait.png');
+        const controller = new AbortController();
+        fetch(url, {
+            method: 'HEAD',
+            headers: {
+                'Access-Control-Expose-Headers': '*',
+                'Access-Control-Allow-Origin': '*',
+            },
+            signal: controller.signal,
+            mode: 'no-cors',
+        }).then((res) => {
+            console.log(res);
+            console.log('headers here');
+            console.log(...res.headers);
+            // res.headers.forEach(console.log);
+        });
+        // res.headers.forEach((val, key) => console.log(key, val))
+        return () => controller.abort();
+    }, []); */
     useEffect(() => {
-        const url = new URL("https://dummyjson.com/products");
-        url.searchParams.set("limit", "5");
+        const url = new URL('https://dummyjson.com/products');
+        url.searchParams.set('limit', '5');
         const controller = new AbortController();
         fetch(url, {
             signal: controller.signal,
         })
-            .then((res) => res.json())
+            .then((res) => {
+                // console.log(...res.headers);
+                return res.json();
+            })
             .then((data) => setProducts(data));
         return () => controller.abort();
     }, []);
