@@ -1,9 +1,10 @@
-import MemeHeader from './meme-header';
-import MemeForm from './meme-form';
+import { MemeForm } from './meme-form';
+import { MemeHeader } from './meme-header';
+import { MemePolygon } from './meme-poligon';
 
 import styles from './meme-generator.module.css';
 
-export default function MemeGenerator() {
+export function MemeGenerator() {
     /* function tmpScope() {
         var color = "white";
         function thing() {
@@ -20,6 +21,7 @@ export default function MemeGenerator() {
             <MemeHeader />
             <img src="/react-playground/favicon.svg" />
             <MemeForm />
+            <MemePolygon />
         </div>
     );
 }

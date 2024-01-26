@@ -18,7 +18,7 @@ module.exports = {
         },
     },
     rules: {
-        'no-console': 'warn',
+        // 'no-console': 'warn',
         'no-unused-expressions': 'error',
         curly: 'error',
         'import/no-default-export': ['error'],

@@ -1,9 +1,8 @@
-import Place from "./Place";
+import globe from '../../images/globe.svg';
+import Count from './Count';
+import Place from './Place';
 
-import styles from "./TravelJournal.module.css";
-
-import globe from "../../images/globe.svg";
-import Count from "./Count";
+import styles from './TravelJournal.module.css';
 
 type Place = {
     id: number;
@@ -16,10 +15,8 @@ type Place = {
     description: string;
 };
 
-export default function TravelJournal(props: { data: Place[] }) {
-    const journalElements = props.data.map((place, index) => (
-        <Place place={place} key={index} />
-    ));
+export function TravelJournal(props: { data: Place[] }) {
+    const journalElements = props.data.map((place, index) => <Place place={place} key={index} />);
 
     return (
         <main className={styles.travel}>

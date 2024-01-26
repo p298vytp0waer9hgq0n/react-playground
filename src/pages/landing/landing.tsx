@@ -1,9 +1,9 @@
-import Airbnb from "../../components/Airbnb/Airbnb";
-import Contacts from "../../components/Contacts/Contacts";
-import ReactFacts from "../../components/ReactFacts/ReactFacts";
-import VisitCard from "../../components/VisitCard/VisitCard";
+import Airbnb from '../../components/Airbnb/Airbnb';
+import Contacts from '../../components/Contacts/Contacts';
+import ReactFacts from '../../components/ReactFacts/ReactFacts';
+import VisitCard from '../../components/VisitCard/VisitCard';
 
-export default function Landing() {
+export function Landing() {
     return (
         <>
             <section className="main">

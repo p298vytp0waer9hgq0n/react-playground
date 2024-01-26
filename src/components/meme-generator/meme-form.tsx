@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+
 import { picData } from '../../utils/pictures';
 
 import styles from './meme-generator.module.css';
@@ -21,7 +22,7 @@ type Products = {
     products: Product[];
 };
 
-export default function MemeForm() {
+export function MemeForm() {
     const [meme, setMeme] = useState({
         topText: '',
         bottomText: '',
@@ -44,22 +45,19 @@ export default function MemeForm() {
         let scream = 'A';
         while (true) {
             scream += 'a';
-            if (0.5 < Math.random()) break;
+            if (0.5 < Math.random()) {
+                break;
+            }
         }
         scream += 'h!!!';
         console.log(scream);
     }
 
     function addThing() {
-        setThings((oldThings) => [
-            ...oldThings,
-            `Thing ${oldThings.length + 1}`,
-        ]);
+        setThings((oldThings) => [...oldThings, `Thing ${oldThings.length + 1}`]);
     }
 
-    const compArray = thingsArray.map((item, index) => (
-        <p key={index}>{item}</p>
-    ));
+    const compArray = thingsArray.map((item, index) => <p key={index}>{item}</p>);
 
     /* useEffect(() => {
         const url = new URL(
@@ -101,40 +99,18 @@ export default function MemeForm() {
 
     return (
         <main>
-            {products &&
-                products.products.map((product) => (
-                    <p key={product.id}>{product.title}</p>
-                ))}
+            {products && products.products.map((product) => <p key={product.id}>{product.title}</p>)}
             <form className={styles.meme__form}>
                 <div className={styles.meme__inputs}>
-                    <input
-                        onMouseOver={handleCursor}
-                        className={styles.meme__input}
-                        autoFocus
-                        type="text"
-                    />
+                    <input onMouseOver={handleCursor} className={styles.meme__input} autoFocus type="text" />
                     <input className={styles.meme__input} type="text" />
                 </div>
-                <button
-                    type="button"
-                    onClick={handleClick}
-                    className={styles.meme__button}
-                >
+                <button type="button" onClick={handleClick} className={styles.meme__button}>
                     Get a new meme image
                 </button>
-                {meme.randomImage && (
-                    <img
-                        className={styles.meme__image}
-                        alt=""
-                        src={meme.randomImage}
-                    />
-                )}
+                {meme.randomImage && <img className={styles.meme__image} alt="" src={meme.randomImage} />}
             </form>
-            <button
-                type="button"
-                className={styles.meme__addThing}
-                onClick={addThing}
-            >
+            <button type="button" className={styles.meme__addThing} onClick={addThing}>
                 Add thing
             </button>
             {compArray}
