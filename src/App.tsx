@@ -1,9 +1,11 @@
-import "./fonts/fonts.css";
-import "./App.css";
-import MainNav from "./components/MainNav/MainNav";
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 
-export default function App() {
+import { MainNav } from './components/MainNav/MainNav';
+
+import './App.css';
+import './fonts/fonts.css';
+
+export function App() {
     return (
         <>
             <MainNav />

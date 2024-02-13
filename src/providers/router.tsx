@@ -1,9 +1,10 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 
-import App from '../App';
+import { App } from '../App';
 import { TravelJournal } from '../components/TravelJournal/TravelJournal';
 import { MemeGenerator } from '../components/meme-generator/meme-generator';
 import { Landing } from '../pages/landing/landing';
+import { Transition } from '../pages/transition/transition';
 import { travelData } from '../utils/travel-data';
 
 export const router = createBrowserRouter(
@@ -12,6 +13,7 @@ export const router = createBrowserRouter(
             <Route index element={<Landing />} />
             <Route path="meme" element={<MemeGenerator />} />
             <Route path="journal" element={<TravelJournal data={travelData} />} />
+            <Route path="transition" element={<Transition />} />
         </Route>,
     ),
     { basename: '/react-playground' },
