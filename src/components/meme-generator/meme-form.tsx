@@ -1,3 +1,4 @@
+import * as Popover from '@radix-ui/react-popover';
 import { useEffect, useState } from 'react';
 
 import { picData } from '../../utils/pictures';
@@ -110,6 +111,15 @@ export function MemeForm() {
                 </button>
                 {meme.randomImage && <img className={styles.meme__image} alt="" src={meme.randomImage} />}
             </form>
+            <Popover.Root>
+                <Popover.Trigger>
+                    blah
+                    <Popover.Content>
+                        something else
+                        <Popover.Close />
+                    </Popover.Content>
+                </Popover.Trigger>
+            </Popover.Root>
             <button type="button" className={styles.meme__addThing} onClick={addThing}>
                 Add thing
             </button>
@@ -117,3 +127,5 @@ export function MemeForm() {
         </main>
     );
 }
+
+MemeForm.displayName = 'MemeForm';

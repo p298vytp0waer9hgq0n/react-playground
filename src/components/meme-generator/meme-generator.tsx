@@ -5,6 +5,7 @@ import { MemePolygon } from './meme-poligon';
 import styles from './meme-generator.module.css';
 
 export function MemeGenerator() {
+    console.log(MemeForm.displayName);
     /* function tmpScope() {
         var color = "white";
         function thing() {
