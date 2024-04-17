@@ -2,8 +2,9 @@ import { ChangeEvent, ReactElement, useEffect, useState, useTransition } from 'r
 
 import { Input } from '../../components/Input/Input';
 import { Something } from '../../components/class-something/class-something';
-import { TmpInput } from '../../components/tmp-input/tmp-input';
+import { Table } from '../../components/table/table';
 
+// import { TmpInput } from '../../components/tmp-input/tmp-input';
 // import { TransList } from './trans-list';
 import styles from './transition.module.css';
 
@@ -63,6 +64,7 @@ export function Transition() {
                 Download
             </button>
             <Something skill="archery" />
+            <Table />
             <h2>Transition</h2>
             {/* <TmpInput /> */}
             <Input type="text" value={word} onChange={handleChange} className={styles.input} />

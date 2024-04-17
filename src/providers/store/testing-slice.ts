@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSelector, createSlice } from '@reduxjs/toolkit';
 
 export const testSlice = createSlice({
     name: 'test',
@@ -15,4 +15,8 @@ export const testSlice = createSlice({
     },
 });
 
+const selector = createSelector(
+    (store) => store.test.value,
+    (value) => value * value,
+);
 export const { increment, decrement } = testSlice.actions;
