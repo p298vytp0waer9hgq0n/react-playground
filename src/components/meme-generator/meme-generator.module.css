@@ -1,0 +1,108 @@
+.meme {
+    font-family: "Karla";
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.meme__header {
+    min-height: 65px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #672280 1.18%, #a626d3);
+    color: #fff;
+    font-family: var(--something, var(--another));
+}
+
+.meme__title {
+    margin: 0 auto 0 7px;
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.1em;
+}
+
+.meme__subtitle {
+    margin-right: 17px;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.meme__form {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 36px 0;
+}
+
+.meme__inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+}
+
+.meme__inputs:has(:focus-visible:not(:active)) {
+    outline: 1px solid red;
+}
+
+.meme__input {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 12px;
+    border: 1px solid #d5d4d8;
+    border-radius: 5px;
+}
+
+/* .meme__input:focus {
+    border: 1px solid #b3b0b5;
+    outline: none;
+} */
+
+.meme__input:focus-visible:not(:active) {
+    border: 1px solid #b3b0b5;
+    outline: none;
+}
+
+.meme__button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: linear-gradient(to right, #711f8d 1.18%, #a818da);
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.1em;
+    cursor: pointer;
+}
+
+.meme__button:hover {
+    outline: 1px solid red;
+    outline-offset: 10px;
+}
+
+.meme__image {
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
+    aspect-ratio: initial;
+}
+
+.meme__addThing {
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 19px;
+    font-family: inherit;
+    cursor: pointer;
+    background: #fff;
+    color: green;
+}
+
+.meme__addThing:hover {
+    border: 2px solid white;
+    background: green;
+    color: #fff;
+}

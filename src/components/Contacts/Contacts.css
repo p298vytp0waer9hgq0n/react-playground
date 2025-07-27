@@ -1,0 +1,64 @@
+.contacts {
+    display: flex;
+    gap: 10px;
+}
+
+.contact {
+    /* box-sizing: border-box; */
+    position: relative;
+    flex-basis: 176px;
+    flex-shrink: 0;
+    padding: 15px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f2f2f2;
+    border-radius: 9px;
+    box-shadow: 3px 3px 4px 2px grey;
+}
+
+.contact__img {
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.contact__title {
+    font-family: 'Poppins';
+    font-size: 16px;
+    letter-spacing: -.03em;
+}
+
+.contact__favorite {
+    position: absolute;
+    top: 19px;
+    left: 19px;
+    fill: white;
+    opacity: .4;
+    cursor: pointer;
+}
+
+.contact__favorite_active {
+    fill: hsl(120 50% 50%);
+    opacity: 1;
+}
+
+.contact__info {
+    max-width: 176px;
+    font-family: 'Inter';
+    font-size: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact__icon {
+    height: 10px;
+    width: 14px;
+    object-fit: cover;
+    position: relative;
+    top: 2px;
+    margin-right: 3px;
+}

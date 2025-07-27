@@ -1,0 +1,12 @@
+{
+  "trailingComma": "all",
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 4,
+  "printWidth": 120,
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "importOrder": ["<THIRD_PARTY_MODULES>", "^\\..*(?<!css)$", "css$"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

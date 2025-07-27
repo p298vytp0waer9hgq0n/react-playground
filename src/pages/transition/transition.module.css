@@ -1,0 +1,29 @@
+.section {
+    max-width: 75%;
+    margin: 50px auto;
+}
+
+.input {
+    margin: 10px 0;
+    max-width: 350px;
+}
+
+.row {
+    display: flex;
+    width: max-content;
+    max-width: 350px;
+    border-top: 1px solid #0004;
+}
+
+.letter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25px;
+    margin: 3px;
+    aspect-ratio: 1 / 1;
+    border-radius: 3px;
+    background: rgb(0, 130, 130);
+    color: #fff;
+    text-transform: capitalize;
+}

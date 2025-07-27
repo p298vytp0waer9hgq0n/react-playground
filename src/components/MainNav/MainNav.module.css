@@ -1,0 +1,24 @@
+.mainnav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    background: #282d35;
+}
+
+.mainnav__button {
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.mainnav__button:hover {
+    color: #619ffb;
+}

@@ -1,0 +1,22 @@
+:root {
+    --something: "Isssfhger";
+    --another: "Inter";
+    --red: red;
+    --green: green;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    font-family: "Inter", sans-serif;
+    color: #fff;
+}
+
+.airbnb {
+    max-width: 550px;
+    margin: auto;
+    font-family: "Poppins";
+    font-weight: 300;
+}
