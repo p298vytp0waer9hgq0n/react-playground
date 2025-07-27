@@ -1,3 +1,4 @@
+import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSelector, createSlice } from '@reduxjs/toolkit';
 
 export const testSlice = createSlice({
@@ -12,7 +13,7 @@ export const testSlice = createSlice({
         decrement: (state) => {
             state.value -= 1;
         },
-        replace: (state, action) => {
+        replace: (state, action: PayloadAction<number>) => {
             state.value = action.payload;
         },
     },

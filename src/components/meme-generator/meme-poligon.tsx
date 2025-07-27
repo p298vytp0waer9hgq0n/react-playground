@@ -17,8 +17,12 @@ export function MemePolygon() {
     return (
         <>
             <p>{value}</p>
-            <button onClick={handleIncrement}>increment</button>
-            <button onClick={handleDecrement}>decrement</button>
+            <button type="button" onClick={handleIncrement}>
+                increment
+            </button>
+            <button type="button" onClick={handleDecrement}>
+                decrement
+            </button>
         </>
     );
 }
